@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="favicon" href="/Users/srinith/Desktop/Group_project/favi.ico" type="image/x-icon">
+    <link rel="icon" href="/Users/srinith/Desktop/Group_project/favi.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/Users/srinith/Desktop/Group_project/favi.ico" type="image/x-icon">
+    <title>traveyGO</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Slideshow Background */
+        .slideshow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .slideshow img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+        }
+
+        @keyframes slide {
+            0% { opacity: 1; transform: scale(1.1); ; }
+            12.5% { opacity: 1; transform: scale(1);}
+            13% {opacity: 0;transform: scale(1);}
+            100% { opacity: 0; transform: scale(1.1); }
+        }
+
+
+        .slideshow img:nth-child(1) { animation: slide 40s infinite ; }
+        .slideshow img:nth-child(2) { animation: slide 40s infinite  5s; }
+        .slideshow img:nth-child(3) { animation: slide 40s infinite  10s; }
+        .slideshow img:nth-child(4) { animation: slide 40s infinite  15s; }
+        .slideshow img:nth-child(5) { animation: slide 40s infinite  20s; }
+        .slideshow img:nth-child(6) { animation: slide 40s infinite  25s; }
+        .slideshow img:nth-child(7) { animation: slide 40s infinite  30s; }
+        .slideshow img:nth-child(8) { animation: slide 40s infinite  35s; }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 10px 0;
+            justify-content: center;
+        }
+
+        /* Logo with Transparent Effect */
+        .logo {
+            width: auto;
+            height: 200px;
+            mix-blend-mode: multiply;
+        }
+
+        .page-heading {
+            font-size: 36px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* Container */
+        .container {
+            width: 800px;
+            background-color: rgba(161, 227, 249, 0.8);
+            border-radius: 30px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .option {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    width: 96%;
+    transition: background-color 0.3s, font-size 0.3s;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.option:first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #3674B5;
+    color: white;
+}
+
+.option:last-child {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.option:hover {
+    background-color: #3674B5;
+    color: white;
+    font-size: 130%;
+}
+    </style>
+</head>
+<body>
+    <!-- Slideshow Background -->
+    <div class="slideshow">
+        <img src="images/A.jpg" alt="Background 1">
+        <img src="images/B.jpg" alt="Background 2">
+        <img src="images/C.jpg" alt="Background 3">
+        <img src="images/D.jpg" alt="Background 4">
+        <img src="images/E.jpg" alt="Background 5">
+        <img src="images/F.jpg" alt="Background 6">
+        <img src="images/G.jpg" alt="Background 7">
+        <img src="images/H.jpg" alt="Background 8">
+    </div>
+    
+    <!-- Header -->
+    <div class="header">
+        <img src="PHOTO-2025-03-21-18-04-28.jpg" alt="traveyGO Logo" class="logo">
+        <div class="page-heading">traveyGO</div>
+   </div>
+    <div class="container">
+        <a class="option" style="font-size: 130%;" href="Home.html">HOME</a>
+        <a class="option" href="initialNewtrip/WorldNewTrip.html">NEW TRIP</a>
+        <a class="option" href="prev_trips/current_trips.html">CURRENT TRIPS</a>
+        <a class="option" href="prev_trips/previous_trips.html">PREVIOUS TRIPS</a>
+        <a class="option" href="shreyas/grp.html">TRENDING TRIPS</a>
+        <a class="option" href="Login_about/about.html">ABOUT US</a>
+        <a class="option" href="Login_about/feedback.html">FEED BACK</a>
+    </div>
+</body>
+</html>
+
